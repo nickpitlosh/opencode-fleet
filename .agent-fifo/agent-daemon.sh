@@ -37,15 +37,11 @@ cleanup() {
 }
 trap cleanup EXIT TERM INT
 
-# Main loop: read one line at a time from FIFO.
-# We use a persistent file descriptor to avoid the open/close race.
-# fd 3 is opened read-write so we never see EOF.
-exec 3<>"$FIFO_IN"
-
+# Main loop: use cat piped to while-read.
+# cat blocks until a writer opens the FIFO, reads until EOF (writer closes),
+# then exits. We restart cat on each iteration.
 while true; do
-  # Read one line from fd 3 (blocks until data available)
-  LINE=""
-  if IFS= read -r -u 3 LINE; then
+  while IFS= read -r LINE; do
     [ -z "$LINE" ] && continue
 
     echo "running" > "$STATUSFILE"
@@ -58,7 +54,7 @@ while true; do
     } >> "$LOG"
 
     TASK_LOG=$(mktemp)
-    if echo "$LINE" | timeout 600 "$HOME/.opencode/bin/opencode" run -m "opencode-go/$MODEL" > "$TASK_LOG" 2>&1; then
+    if echo "$LINE" | timeout 900 "$HOME/.opencode/bin/opencode" run -m "opencode-go/$MODEL" > "$TASK_LOG" 2>&1; then
       cat "$TASK_LOG" >> "$LOG"
       echo "==== TASK END $TASK_ID status=ok at $(date +%s) ====" >> "$LOG"
     else
@@ -71,7 +67,6 @@ while true; do
       fi
     fi
     rm -f "$TASK_LOG"
-
     echo "idle" > "$STATUSFILE"
-  fi
+  done < "$FIFO_IN"
 done
