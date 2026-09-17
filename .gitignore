@@ -18,3 +18,7 @@ test-prompts/results/
 .opencode/bin/opencode
 .opencode/package.json
 .opencode/package-lock.json
+.agent-fifo/*/
+test-prompts/responses/
+test-prompts/results/
+*.response.md.stderr
