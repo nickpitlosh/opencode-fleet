@@ -41,3 +41,41 @@ PROMPT: what is 2+2? answer in 2 words
 [0m
 four.
 ==== TASK END task_1789679650_1652135_12954 status=ok at 1789679655 ====
+==== TASK START task_1789679742_1652135_9670 at 1789679742 ====
+PROMPT: explain recursion in 20 words
+---- output ----
+[0m
+> build · deepseek-v4-flash
+[0m
+A function that calls itself with smaller inputs until it reaches a base case, solving big problems by breaking them into smaller versions.
+==== TASK END task_1789679742_1652135_9670 status=ok at 1789679754 ====
+==== daemon up: stacy (deepseek-v4-flash) pid 1656052 at 1789681003 ====
+==== TASK START task_1789681006_1656052_11712 at 1789681006 ====
+PROMPT: say reboot survived
+---- output ----
+[0m
+> build · deepseek-v4-flash
+[0m
+reboot survived
+==== TASK END task_1789681006_1656052_11712 status=ok at 1789681011 ====
+==== daemon up: stacy (deepseek-v4-flash) pid 1657491 at 1789681023 ====
+==== TASK START task_1789681051_1657491_18365 at 1789681051 ====
+PROMPT: list the first 50 prime numbers one per line
+---- output ----
+==== daemon up: stacy (deepseek-v4-flash) pid 1659649 at 1789681064 ====
+==== TASK START task_1789681069_1659649_389 at 1789681069 ====
+PROMPT: reply with OK
+---- output ----
+[0m
+> build · deepseek-v4-flash
+[0m
+OK
+==== TASK END task_1789681069_1659649_389 status=ok at 1789681074 ====
+==== TASK START task_1789681246_1659649_27791 at 1789681246 ====
+PROMPT: reply OK
+---- output ----
+[0m
+> build · deepseek-v4-flash
+[0m
+OK
+==== TASK END task_1789681246_1659649_27791 status=ok at 1789681251 ====

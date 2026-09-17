@@ -7,3 +7,14 @@ PROMPT: say hello briefly
 [0m
 Hello! 👋
 ==== TASK END task_1789679089_1649434_10979 status=ok at 1789679094 ====
+==== daemon up: luna (gpt-5.6-luna) pid 1656101 at 1789681003 ====
+==== daemon up: luna (gpt-5.6-luna) pid 1656913 at 1789681018 ====
+==== daemon up: luna (gpt-5.6-luna) pid 1659023 at 1789681060 ====
+==== TASK START task_1789681266_1659023_227 at 1789681266 ====
+PROMPT: reply OK
+---- output ----
+[0m
+> build · gpt-5.6-luna
+[0m
+OK
+==== TASK END task_1789681266_1659023_227 status=ok at 1789681271 ====

@@ -7,3 +7,14 @@ PROMPT: what is 4+4? answer in 2 words
 [0m
 Eight exactly
 ==== TASK END task_1789679660_1652739_4473 status=ok at 1789679667 ====
+==== daemon up: kira (kimi-k3) pid 1656150 at 1789681004 ====
+==== daemon up: kira (kimi-k3) pid 1656823 at 1789681018 ====
+==== daemon up: kira (kimi-k3) pid 1658929 at 1789681059 ====
+==== TASK START task_1789681272_1658929_9794 at 1789681272 ====
+PROMPT: reply OK
+---- output ----
+[0m
+> build · kimi-k3
+[0m
+OK
+==== TASK END task_1789681272_1658929_9794 status=ok at 1789681278 ====
