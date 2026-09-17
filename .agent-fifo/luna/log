@@ -1,0 +1,9 @@
+==== agent daemon up: luna (gpt-5.6-luna) pid 1649434 at 1789679087 ====
+==== TASK START task_1789679089_1649434_10979 at 1789679089 ====
+PROMPT: say hello briefly
+---- output ----
+[0m
+> build · gpt-5.6-luna
+[0m
+Hello! 👋
+==== TASK END task_1789679089_1649434_10979 status=ok at 1789679094 ====
