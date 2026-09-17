@@ -1,0 +1,10 @@
+{
+  "name": "commonplace-collaborative-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check editor.js && node --check ot-engine.js",
+    "test": "node --test tests/editor.test.js"
+  }
+}

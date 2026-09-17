@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # riven — runs opencode with opencode-go/deepseek-v4-flash-vision-exp
-exec opencode run -m "opencode-go/deepseek-v4-flash-vision-exp" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/deepseek-v4-flash-vision-exp" "$@"

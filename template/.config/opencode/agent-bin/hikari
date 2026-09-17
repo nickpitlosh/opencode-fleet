@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # hikari — runs opencode with opencode-go/hy4-preview
-exec opencode run -m "opencode-go/hy4-preview" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/hy4-preview" "$@"

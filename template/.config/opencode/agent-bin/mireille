@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # mireille — runs opencode with opencode-go/mimo-v2.5-pro
-exec opencode run -m "opencode-go/mimo-v2.5-pro" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/mimo-v2.5-pro" "$@"

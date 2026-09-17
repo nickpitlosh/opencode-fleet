@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # aria — runs opencode with opencode-go/qwen3.7-plus
-exec opencode run -m "opencode-go/qwen3.7-plus" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/qwen3.7-plus" "$@"

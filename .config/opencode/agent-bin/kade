@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # kade — runs opencode with opencode-go/deepseek-v4-pro
-exec opencode run -m "opencode-go/deepseek-v4-pro" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/deepseek-v4-pro" "$@"

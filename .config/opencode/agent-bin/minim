@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # minim — runs opencode with opencode-go/minimax-m2.7
-exec opencode run -m "opencode-go/minimax-m2.7" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/minimax-m2.7" "$@"

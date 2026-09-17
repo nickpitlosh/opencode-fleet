@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # luna — runs opencode with opencode-go/gpt-5.6-luna
-exec opencode run -m "opencode-go/gpt-5.6-luna" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/gpt-5.6-luna" "$@"

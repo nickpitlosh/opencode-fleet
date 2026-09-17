@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # kira — runs opencode with opencode-go/kimi-k3
-exec opencode run -m "opencode-go/kimi-k3" "$@"
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+exec "$HOME/.opencode/bin/opencode" run -m "opencode-go/kimi-k3" "$@"
