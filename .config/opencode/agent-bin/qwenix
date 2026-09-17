@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# qwenix — runs opencode with opencode-go/qwen3.6-plus
+exec opencode run -m "opencode-go/qwen3.6-plus" "$@"

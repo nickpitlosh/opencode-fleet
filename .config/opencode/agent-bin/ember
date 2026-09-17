@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# ember — runs opencode with opencode-go/muse-spark-1.3-contributor
+exec opencode run -m "opencode-go/muse-spark-1.3-contributor" "$@"

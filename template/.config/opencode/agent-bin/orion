@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# orion — runs opencode with opencode-go/glm-5.2
+exec opencode run -m "opencode-go/glm-5.2" "$@"

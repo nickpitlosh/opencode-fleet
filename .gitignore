@@ -1,0 +1,15 @@
+.bash_history
+.viminfo
+.vsp/
+.vpt/
+.npm/
+.nvm/
+.cache/
+.ssh/
+.local/
+.config/opencode/node_modules/
+.communityservices/
+.DS_Store
+*.swp
+*.swo
+*~

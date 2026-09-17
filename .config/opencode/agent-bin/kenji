@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kenji — runs opencode with opencode-go/kimi-k2.7-code
+exec opencode run -m "opencode-go/kimi-k2.7-code" "$@"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# felix — runs opencode with opencode-go/longcat-2.0
+exec opencode run -m "opencode-go/longcat-2.0" "$@"

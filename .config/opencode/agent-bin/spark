@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# spark — runs opencode with opencode-go/muse-spark-1.2-contributor
+exec opencode run -m "opencode-go/muse-spark-1.2-contributor" "$@"

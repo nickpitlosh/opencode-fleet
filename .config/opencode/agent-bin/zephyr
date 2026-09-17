@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# zephyr — runs opencode with opencode-go/qwen3.8-max
+exec opencode run -m "opencode-go/qwen3.8-max" "$@"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# alpha — runs opencode with opencode-go/union-alpha
+exec opencode run -m "opencode-go/union-alpha" "$@"

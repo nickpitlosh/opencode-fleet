@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# lumi — runs opencode with opencode-go/glm-5.3-flash
+exec opencode run -m "opencode-go/glm-5.3-flash" "$@"

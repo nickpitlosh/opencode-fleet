@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# thera — runs opencode with opencode-go/deepseek-v4.1-flash
+exec opencode run -m "opencode-go/deepseek-v4.1-flash" "$@"

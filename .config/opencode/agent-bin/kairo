@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kairo — runs opencode with opencode-go/kimi-k2.6
+exec opencode run -m "opencode-go/kimi-k2.6" "$@"

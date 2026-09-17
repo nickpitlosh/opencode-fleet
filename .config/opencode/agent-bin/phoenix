@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# phoenix — runs opencode with opencode-go/hy3
+exec opencode run -m "opencode-go/hy3" "$@"

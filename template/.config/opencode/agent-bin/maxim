@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# maxim — runs opencode with opencode-go/minimax-m3
+exec opencode run -m "opencode-go/minimax-m3" "$@"
