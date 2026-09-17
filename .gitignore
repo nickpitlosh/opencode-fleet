@@ -9,6 +9,8 @@
 .local/
 .config/opencode/node_modules/
 .communityservices/
+test-prompts/responses/
+test-prompts/results/
 .DS_Store
 *.swp
 *.swo
